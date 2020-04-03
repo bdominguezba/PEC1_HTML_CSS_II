@@ -1,0 +1,43 @@
+@media only screen and (max-width: 480px) {
+  body {
+    background-image: url("../images/azulejo1.jpg");
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container.cv-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+  }
+
+  .container.cv-head {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image-cropper {
+    width: 8em;
+    height: 8em;
+    align-self: center;
+  }
+
+  .profile-pic {
+    width: 8em;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .brief {
+    font-size: 12px;
+  }
+
+  .h3,
+  .h4 {
+    font-size: smaller;
+  }
+}

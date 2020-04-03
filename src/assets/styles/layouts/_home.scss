@@ -1,0 +1,125 @@
+body {
+  height: 100%;
+  background-image: url("../images/abstract-painting-1234853.jpg");
+  background-attachment: fixed;
+
+  .container.back-container {
+    justify-content: center;
+    align-items: center;
+
+    .container.cv-container {
+      margin-top: 6em;
+      margin-bottom: 6em;
+      padding: 5em;
+      width: 75vw;
+      background-color: $snow-color;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.container.cv-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  .image-cropper {
+    width: 12em;
+    height: 12em;
+    margin: 2em 2em 0 2em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #faf0e6;
+    flex-shrink: 0;
+
+    .profile-pic {
+      width: 12em;
+    }
+  }
+
+  .intro {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: $font-name;
+
+    .name {
+      font-size: 40px;
+    }
+
+    .fas.fa-heart {
+      color: red;
+    }
+
+    .fas.fa-home {
+      color: #a52a2a;
+    }
+
+    .brief {
+      padding: 0 1em 1em 1em;
+      text-align: justify;
+      font-family: $font-intro;
+      flex-shrink: 3;
+    }
+  }
+}
+
+.container.experiencia,
+.container.education,
+.container.languages {
+  flex-direction: column;
+  text-align: justify;
+  padding: 0 1.5em 2em 1.5em;
+
+  h3 {
+    color: $title-color;
+    font-family: $font-titles;
+    font-weight: 500;
+    margin-bottom: -1em;
+  }
+
+  h4 {
+    line-height: 1em;
+    font-family: $font-titles;
+    font-weight: 400;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: $font-titles;
+    font-weight: 200;
+  }
+
+  li {
+    padding-left: 1em;
+  }
+}
+
+li .experience-detail {
+  line-height: 1.5em;
+  font-size: 12px;
+
+  .fas.fa-thumbtack {
+    font-size: 10px;
+    color: #8fbc8f;
+    transform: rotate(335deg);
+  }
+}
+
+.experience-date-place,
+.education-date-place {
+  font-size: 14px;
+  margin-top: -0.9em;
+  color: #8fbc8f;
+}
